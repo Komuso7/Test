@@ -1,0 +1,15 @@
+{% extends 'main/templates.html'%}
+
+{% block content %}
+<div class="features">
+    <form method="POST" action="{% url 'Tomas_answer' %}">
+        {% csrf_token %}
+        {% for q in questions %}
+            <li>{{ q }}</li>
+            <label><input type="radio" name="question{{ forloop.counter }}" value="1"> 1</label><br>
+            <label><input type="radio" name="question{{ forloop.counter }}" value="2"> 2</label><br>
+        {% endfor %}
+        <button type="submit">Отправить</button>
+    </form>
+</div>
+{% endblock %}

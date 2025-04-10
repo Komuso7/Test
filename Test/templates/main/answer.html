@@ -1,0 +1,9 @@
+{% extends 'main/templates.html'%}
+{% block content %}
+<div class="features">
+    <form>
+        {% csrf_token %}
+        {{ answers }}
+        <a class="btn btn-primary" href="{% url 'home' %}">на главную страницу</a>
+    </form>
+    {% endblock %}

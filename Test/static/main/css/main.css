@@ -1,0 +1,22 @@
+body {
+    background: #2c2c2c;
+}
+
+aside ul {list-style: none}
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    transition: all .2s ease;
+}
+
+
+main .features{
+    float: left;
+    color: #fff;
+    margin-top: 200px;
+    text-align: center;
+    width: 75%;
+}
+main .features h1 {font-size: 100px;}
+main .features p {max-width: 400px; margin: 20px auto}

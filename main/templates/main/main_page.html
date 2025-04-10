@@ -1,0 +1,11 @@
+{% extends 'main/templates.html'%}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Какой тест вы будете проходить</h1>
+        <a class="btn btn-primary" href="{% url 'Keirsi_Test' %}"> Keirsi </a>
+        <a class="btn btn-primary" href="{% url 'motivation_Test' %}">motivation</a>
+        <a class="btn btn-primary" href="{% url 'Tomas_Test' %}">Tomas</a>
+{% endblock %}
